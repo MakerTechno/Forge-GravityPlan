@@ -20,7 +20,7 @@ public class SimpleIconIntro extends Item {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
-        //player.sendSystemMessage(Component.translatable("msg.gravityplan.introduce"));
+        player.sendSystemMessage(Component.translatable("msg.gravityplan.introduce"));
         return super.use(level, player, interactionHand);
     }
 

@@ -1,0 +1,13 @@
+{
+  "description.gravityplan.back": "back",
+  "description.gravityplan.down": "down",
+  "description.gravityplan.first": "An Force that takes you ",
+  "description.gravityplan.force": "Force size",
+  "description.gravityplan.forward": "forward",
+  "description.gravityplan.left": "left",
+  "description.gravityplan.right": "right",
+  "description.gravityplan.up": "up",
+  "item.gravityplan.icon": "This is just an useless item for creative mod tab as an icon, why take it out?",
+  "itemGroup.gravityplan": "Gravity Plan",
+  "msg.gravityplan.introduce": "This mod is a simple mod written by Maker, using IntelliJ idea.\n Now, WHAT DO YOU WANT? I SAID, IT'S JUST AN ICON!!!"
+}

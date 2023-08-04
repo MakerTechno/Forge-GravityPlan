@@ -1,8 +1,10 @@
 package nowebsite.maker.gravityplan.datagen;
 
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.FinishedRecipe;
-import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
+import nowebsite.maker.gravityplan.registry.ItemRegistration;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Consumer;
@@ -13,13 +15,15 @@ public class ModRecipeProvider extends RecipeProvider {
     }
 
     protected void buildRecipes(@NotNull Consumer<FinishedRecipe> consumer) {
-        /*ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ChairBlockRegistration.OAK_CHAIRS.get(), 2)
-                .define('O', Items.OAK_SLAB)
-                .define('S', Items.STICK)
-                .pattern("  O")
-                .pattern("SOS")
-                .pattern("S S")
-                .unlockedBy("has_slab", has(Items.OAK_SLAB))
-                .save(consumer);*/
+        /*ShapelessRecipeBuilder.shapeless(RecipeCategory.COMBAT, ItemRegistration.FORCE_FORWARD.get(),1)
+                .requires(ItemRegistration.FORCE_FORWARD.get())
+                .requires(ItemRegistration.FORCE_FORWARD.get())
+                .unlockedBy("has_power", has())
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ItemRegistration.FORCE_UP.get())
+                .define('U')*/
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Items.TNT), RecipeCategory.MISC, Items.TNT, 0.1f, 114514).save(consumer);
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(Items.TNT), RecipeCategory.MISC, Items.TNT, 0.1f, 114514).save(consumer);
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(Items.TNT), RecipeCategory.MISC, Items.TNT, 0.1f, 114514).save(consumer);
     }
 }

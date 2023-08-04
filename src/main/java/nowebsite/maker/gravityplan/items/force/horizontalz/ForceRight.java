@@ -8,4 +8,18 @@ public class ForceRight extends ForceItem {
     public IResultDirection getResult() {
         return IResultDirection.RIGHT;
     }
+
+
+
+    private int subSource;
+
+    @Override
+    public int getCompByFlush() {
+        return subSource;
+    }
+
+    @Override
+    public void flushComp(int i) {
+        subSource = i;
+    }
 }

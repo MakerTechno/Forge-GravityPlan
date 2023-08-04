@@ -12,6 +12,19 @@ public class ForceForward extends ForceItem {
         return IResultDirection.FORWARD;
     }
 
+
+    private int subSource;
+
+    @Override
+    public int getCompByFlush() {
+        return subSource;
+    }
+
+    @Override
+    public void flushComp(int i) {
+        subSource = i;
+    }
+
     @Override
     public void extraEvent(Level level, Player player, InteractionHand interactionHand) {
         super.extraEvent(level, player, interactionHand);
