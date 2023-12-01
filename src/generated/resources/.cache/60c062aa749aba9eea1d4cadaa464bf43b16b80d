@@ -1,8 +1,4 @@
-// 1.19.4	2023-08-04T22:50:32.2341993	Item Models: gravityplan
-b7313563b8ccafe67010d3ae9b542d8e7c0ced42 assets/gravityplan/models/item/force_back.json
-095feaf30dec2bc11c34a901f8f1d4211e30cb9b assets/gravityplan/models/item/force_down.json
-ef357c35ddfa3f782c4d26a5988ad693f1278454 assets/gravityplan/models/item/force_forward.json
-331e67ebc9fa2bc996e8243004d0d9becc1b3e34 assets/gravityplan/models/item/force_left.json
-ab2ee7eed7ab159ffd25873e3d4707a3437679fa assets/gravityplan/models/item/force_right.json
-292e827b49f5347babfe26c6ef1aef466ae25d4a assets/gravityplan/models/item/force_up.json
+// 1.19.4	2023-11-12T18:57:02.9682986	Item Models: gravityplan
+488e1e16a349d979b9287b3d29933ea36bca8977 assets/gravityplan/models/item/force.json
 556d286cc49dd31ce87c9e7d65c035c9bfbd6cfd assets/gravityplan/models/item/icon.json
+744fcbaebd95fae62e2d4cbe57af5eecf8d92c98 assets/gravityplan/models/item/super_tnt.json

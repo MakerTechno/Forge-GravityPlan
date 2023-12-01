@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "nowebsite.maker.gravityplan.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "refmap": "mixins.gravityplan.refmap.json",
+  "plugin": "nowebsite.maker.gravityplan.mixins.MixinPlugin",
+  "mixins": [
+    "source.AbstractFurnaceBlockEntityMixin",
+    "source.ExplodeForceRefreshMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

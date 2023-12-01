@@ -8,6 +8,9 @@ import nowebsite.maker.gravityplan.GravityPlan;
 
 @EventBusSubscriber(modid = GravityPlan.MOD_ID, bus = Bus.MOD)
 public class ModSetup {
+
+    public static final String SHOULD_EXPLODE_TAG = "Should explode";
+    public static final String HAS_EXPLODED_TAG = "Has exploded";
     public static void setup() {
         IEventBus bus = MinecraftForge.EVENT_BUS;
     }

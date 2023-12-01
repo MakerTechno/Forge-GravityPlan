@@ -1,6 +1,8 @@
 package nowebsite.maker.gravityplan.setup;
 
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
@@ -16,15 +18,10 @@ public class SetupWithEvents {
         event.registerCreativeModeTab(
                 new ResourceLocation(GravityPlan.MOD_ID, "main_tab"),
                 (builder) -> builder.displayItems((parameters, output) -> {
-                    output.accept(ItemRegistration.FORCE_FORWARD.get());
-                    output.accept(ItemRegistration.FORCE_BACK.get());
-                    output.accept(ItemRegistration.FORCE_UP.get());
-                    output.accept(ItemRegistration.FORCE_DOWN.get());
-                    output.accept(ItemRegistration.FORCE_LEFT.get());
-                    output.accept(ItemRegistration.FORCE_RIGHT.get());
+                    output.accept(ItemRegistration.FORCE.get());
                 })
-                //.title(Component.translatable("itemGroup.furniture"))
-                //.icon(() -> new ItemStack(ItemRegistration.TEST_ITEM.get()))
+                .title(Component.translatable("itemGroup.gravityplan"))
+                .icon(() -> new ItemStack(ItemRegistration.ICON.get()))
         );
     }
 }

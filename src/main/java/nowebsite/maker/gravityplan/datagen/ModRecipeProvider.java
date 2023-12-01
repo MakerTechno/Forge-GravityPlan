@@ -22,8 +22,8 @@ public class ModRecipeProvider extends RecipeProvider {
                 .save(consumer);
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ItemRegistration.FORCE_UP.get())
                 .define('U')*/
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Items.TNT), RecipeCategory.MISC, Items.TNT, 0.1f, 114514).save(consumer);
-        SimpleCookingRecipeBuilder.blasting(Ingredient.of(Items.TNT), RecipeCategory.MISC, Items.TNT, 0.1f, 114514).save(consumer);
-        SimpleCookingRecipeBuilder.smoking(Ingredient.of(Items.TNT), RecipeCategory.MISC, Items.TNT, 0.1f, 114514).save(consumer);
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Items.TNT), RecipeCategory.MISC, ItemRegistration.SUPER_TNT.get(), 0.1f, 50).unlockedBy("has_tnt", has(Items.TNT)).save(consumer);
+        //SimpleCookingRecipeBuilder.blasting(Ingredient.of(Items.TNT), RecipeCategory.MISC, Items.TNT, 0.1f, 1).save(consumer);
+        //SimpleCookingRecipeBuilder.smoking(Ingredient.of(Items.TNT), RecipeCategory.MISC, Items.TNT, 0.1f, 1).save(consumer);
     }
 }

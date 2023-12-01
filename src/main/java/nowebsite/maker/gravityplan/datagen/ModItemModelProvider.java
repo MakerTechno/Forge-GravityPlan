@@ -19,40 +19,16 @@ public class ModItemModelProvider extends ItemModelProvider {
                 modLoc("item/icon")
         );
         singleTexture(
-                ItemRegistration.FORCE_FORWARD.get().toString(),
+                ItemRegistration.FORCE.get().toString(),
                 mcLoc("item/generated"),
                 "layer0",
-                modLoc("item/forward")
+                modLoc("item/force")
         );
         singleTexture(
-                ItemRegistration.FORCE_BACK.get().toString(),
+                ItemRegistration.SUPER_TNT.get().toString(),
                 mcLoc("item/generated"),
                 "layer0",
-                modLoc("item/back")
-        );
-        singleTexture(
-                ItemRegistration.FORCE_UP.get().toString(),
-                mcLoc("item/generated"),
-                "layer0",
-                modLoc("item/up")
-        );
-        singleTexture(
-                ItemRegistration.FORCE_DOWN.get().toString(),
-                mcLoc("item/generated"),
-                "layer0",
-                modLoc("item/down")
-        );
-        singleTexture(
-                ItemRegistration.FORCE_LEFT.get().toString(),
-                mcLoc("item/generated"),
-                "layer0",
-                modLoc("item/left")
-        );
-        singleTexture(
-                ItemRegistration.FORCE_RIGHT.get().toString(),
-                mcLoc("item/generated"),
-                "layer0",
-                modLoc("item/right")
+                mcLoc("item/stick")
         );
         //withExistingParent(ro.get().get().toString(), modLoc("block/" + ro.get()));
     }

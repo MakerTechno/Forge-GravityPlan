@@ -13,16 +13,10 @@ public class ModEnglishLanguageProvider extends LanguageProvider {
     protected void addTranslations() {
         add("itemGroup.gravityplan", "Gravity Plan");
         add(ItemRegistration.ICON.get(),"This is just an useless item for creative mod tab as an icon, why take it out?");
+        add(ItemRegistration.FORCE.get(), "A Force?");
         add("msg.gravityplan.introduce", "This mod is a simple mod written by Maker, using IntelliJ idea.\n" +
                 " Now, WHAT DO YOU WANT? I SAID, IT'S JUST AN ICON!!!");
+        add("gravityplan.msg.bye", "Goodbye! Hah!");
 
-        add("description.gravityplan.first", "An Force that takes you ");
-        add("description.gravityplan.up", "up");
-        add("description.gravityplan.down", "down");
-        add("description.gravityplan.left", "left");
-        add("description.gravityplan.right", "right");
-        add("description.gravityplan.forward", "forward");
-        add("description.gravityplan.back", "back");
-        add("description.gravityplan.force", "Force size");
     }
 }

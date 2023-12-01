@@ -22,7 +22,7 @@ public class ModDataGenerators {
         generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, helper));
         generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, helper));
         generator.addProvider(event.includeServer(), new ModLootTableProvider(packOutput));
-        //generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput));
+        generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput));
         generator.addProvider(event.includeServer(), new ModBlockTagsProvider(packOutput, lookupProvider, helper));
         //generator.addProvider(event.includeServer(), new ModItemTagsProvider(packOutput, lookupProvider, lookupCompletableFuture));
     }

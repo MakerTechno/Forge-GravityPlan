@@ -1,13 +1,6 @@
 {
-  "description.gravityplan.back": "后",
-  "description.gravityplan.down": "下",
-  "description.gravityplan.first": "该力将你推向：",
-  "description.gravityplan.force": "力量大小",
-  "description.gravityplan.forward": "前",
-  "description.gravityplan.left": "左",
-  "description.gravityplan.right": "右",
-  "description.gravityplan.up": "上",
+  "gravityplan.msg.bye": "拜拜了您嘞!",
   "item.gravityplan.icon": "这只是个作为创造模式物品栏图标的物品，没什么用，你拿它干嘛？",
-  "itemGroup.furniture": "重力计划",
+  "itemGroup.gravityplan": "重力计划",
   "msg.gravityplan.introduce": "这是Maker使用IntelliJ idea编写的一个简单模组。\n现在，你TM还要啥?我TM都说了，这只是个用作图标的物品!啥用也没有!!!"
 }
